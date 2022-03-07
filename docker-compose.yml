@@ -8,13 +8,13 @@ services:
     environment:
       POSTGRES_DB: world
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: docker
+      POSTGRES_PASSWORD: ######
 
   datascience-notebook:
     build:
       context: .
       dockerfile: ./notebook/dockerfile
     volumes:
-      - ./notebook/:/home/jovyan/
+      - ./notebook/:/home/jovyan/notebook/
     ports:
       - 3000:8888
