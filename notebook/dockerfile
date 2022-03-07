@@ -1,0 +1,8 @@
+FROM jupyter/datascience-notebook:latest
+
+USER root
+ENV GRANT_SUDO="yes"
+
+RUN sudo apt-get -y update && sudo apt-get -y install git
+RUN sudo apt-get -y install libpq-dev python-dev
+RUN python -m pip install psycopg2

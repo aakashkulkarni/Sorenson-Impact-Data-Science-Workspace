@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:14.2
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d/
+    environment:
+      POSTGRES_DB: world
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: docker
+
+  datascience-notebook:
+    build:
+      context: .
+      dockerfile: ./notebook/dockerfile
+    volumes:
+      - ./notebook/:/home/jovyan/
+    ports:
+      - 3000:8888
