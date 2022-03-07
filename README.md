@@ -7,8 +7,9 @@ This workspace comes with a sample World database configured. A PostgreSQL DBMS 
 1. Install Docker for your machine: https://www.docker.com/get-started
 2. Clone this repository
 3. Open up a terminal and change the working directory to the directory that contains `docker-compose.yml`
-4. Run `docker-compose up` command
-5. Attach the notebook container to Visual Studio Code or start working in the browser.
+4. OPEN UP the `docker-compose.yml` file and find where it says **######** in the password field for the database. Replace that with **docker**
+5. Run `docker-compose up` command
+6. Attach the notebook container to Visual Studio Code or start working in the browser.
 
 ---
 ### Working in the browser
