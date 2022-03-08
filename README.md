@@ -67,6 +67,11 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vsco
 - [Troubleshooting Local Database Connection with PostgreSQL Container](https://forums.docker.com/t/unable-to-connect-to-external-postgresql-database-from-a-application-docker-container/89185)
 - [The `pg_hba.conf` File](https://www.postgresql.org/docs/9.2/auth-pg-hba-conf.html)
 
+### Exit application
+- Once you are finished with your task, press `Ctrl+C` in the terminal with the server running. 
+- Then, type in `docker-compose down` to remove the containers. 
+- Optionally, you can additionally delete the image by opening up the Docker application (the one you installed) and clicking on Images > Datascience Workspace Image > Remove
+
 ## Important Notes
 - Any modifications/deletions/insertions you make to the Notebook files will be reflected on your local machine in the `notebook` folder so that your source code is easily shareable.
 - Once you have the Jupyter server running in the browser, or you have attached VS Code to the container, you will see a `main.py` file. Executing this file will return the first 10 rows of the sample `World` database.
