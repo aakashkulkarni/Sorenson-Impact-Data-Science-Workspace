@@ -74,7 +74,7 @@ VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vsco
 
 ## Important Notes
 - Any modifications/deletions/insertions you make to the Notebook files will be reflected on your local machine in the `notebook` folder so that your source code is easily shareable.
-- Once you have the Jupyter server running in the browser, or you have attached VS Code to the container, you will see a `main.py` file. Executing this file will return the first 10 rows of the sample `World` database.
+- Once you have the Jupyter server running in the browser, or you have attached VS Code to the container, you will see a `main.py` file. Executing this file will return the first 10 rows of the `cities` table from the sample `World` database.
 
 ## Issues & Feature Requests
 Contact: aakash.kulkarni@sorensonimpact.com
